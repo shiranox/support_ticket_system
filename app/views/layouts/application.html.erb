@@ -14,3 +14,13 @@
     <%= yield %>
   </body>
 </html>
+</br></br>
+
+<% if logged_in? %>
+  <%= link_to 'Sign Out', logout_path %></br></br>
+  <%= link_to 'New Ticket', new_ticket_path %>
+
+<% else %>
+  <%= link_to 'Sign In', login_path %>
+<% end %>
+

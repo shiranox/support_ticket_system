@@ -66,12 +66,14 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    bcrypt (3.1.19)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
     builder (3.2.4)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
+    csv (3.2.7)
     date (3.3.3)
     debug (1.8.0)
       irb (>= 1.5.0)
@@ -191,7 +193,9 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  bcrypt
   bootsnap
+  csv
   debug
   importmap-rails
   jbuilder
