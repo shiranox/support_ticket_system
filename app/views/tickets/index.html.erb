@@ -35,7 +35,7 @@
                     <% end %>
                 </td>
                 <td><%= button_to 'Show', ticket_path(ticket), method: :get %></td>
-                <td><%= button_to 'Delete', ticket_path(ticket), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td><%= button_to 'Delete', ticket_path(ticket), method: :delete %></td>
             </tr>
         <% end %>
     </tbody>

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   resources :tickets do
-    resources :comments, only: [:create, :destroy]
+    resources :comments, only: [:create]
   end
   resources :users, only: [:new, :create]
 
