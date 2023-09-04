@@ -8,6 +8,7 @@ class TicketsController < ApplicationController
 
     def index
         @tickets = Ticket.all
+        @ticket_counts = Ticket.group(:status).count
     end
 
     def show

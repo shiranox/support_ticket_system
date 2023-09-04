@@ -40,3 +40,12 @@
         <% end %>
     </tbody>
 </table>
+</br></br>
+
+<p>
+    <b>Statistics:</b></br>
+    <% Ticket.statuses.keys.each do |status| %>
+        <%= "#{status.humanize}: #{@ticket_counts[status] || 0}" %>
+        </br>
+    <% end %>
+</p>
