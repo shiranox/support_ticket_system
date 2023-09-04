@@ -12,4 +12,8 @@ class Ticket < ApplicationRecord
             csv << [name, email, subject, content, status]
         end
     end
+
+    def has_non_empty_comments?
+        comments.any? { |comment| comment.content.present? }
+    end
 end

@@ -30,7 +30,8 @@
                 <td><%= ticket.content %></td>
                 <td>
                     <%= form_for ticket, url: ticket_path(ticket), method: :patch do |f| %>
-                        <%= f.select :status, Ticket.statuses.keys, {}, onchange: 'this.form.submit();' %>
+                    <% tickets_options = Ticket.statuses.keys.map { |status| [status.humanize, status, { disabled: (status == 'resolved' && !ticket.has_non_empty_comments?) }] } %>
+                        <%= f.select :status, tickets_options, {}, onchange: 'this.form.submit();' %>
                     <% end %>
                 </td>
                 <td><%= button_to 'Show', ticket_path(ticket), method: :get %></td>
