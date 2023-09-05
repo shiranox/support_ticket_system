@@ -1,16 +1,28 @@
 <h1>Signup</h1>
 
-<%= form_for @user do |f| %>
+<%= form_for @user, data: { turbo: "false" } do |f| %>
     <%= f.label :email %>
     <%= f.text_field :email %>
-    
+    </br>    </br>
+
     <%= f.label :password %>
     <%= f.password_field :password %>
-    
+    </br>    </br>
+
     <%= f.label :password_confirmation %>
     <%= f.password_field :password_confirmation %>
-    
+    </br>    </br>
+
     <%= f.submit "Signup" %>
 <% end %>
 
 
+<% if @user&.errors.any? %>
+    <div class="errors" style="color:red">
+        <ul>
+            <% @user.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+        </ul>
+    </div>
+<% end %>

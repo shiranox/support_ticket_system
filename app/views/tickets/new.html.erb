@@ -1,6 +1,6 @@
 <h1>Create a New Ticket</h1>
 
-<%= form_for @ticket do |f| %>
+<%= form_for @ticket, data: { turbo: "false" } do |f| %>
     <%= f.label :name %>
     <%= f.text_field :name %>
     </br>   </br>
@@ -21,4 +21,14 @@
     </br>   </br>
 
     <%= f.submit "Create Ticket" %>
+<% end %>
+
+<% if @ticket&.errors.any? %>
+    <div class="errors" style="color:red">
+        <ul>
+            <% @ticket.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+        </ul>
+    </div>
 <% end %>
