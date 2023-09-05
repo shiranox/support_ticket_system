@@ -30,3 +30,7 @@ Validation
 Deleting a ticket
 
 ![image](https://github.com/shiranox/support_ticket_system/assets/55157254/bf17f8c0-863f-4175-90c3-2b6f9aa4e329)
+
+Resolved status can't be applied prior to posting a comment to the ticket
+
+![image](https://github.com/shiranox/support_ticket_system/assets/55157254/f0e817fe-42ac-467d-b2d3-a06ba2cefb19)
