@@ -14,7 +14,7 @@
     <thead>
         <tr>
             <th>Name</th>
-            <th>Email</th>
+            <th>Created By</th>
             <th>Subject</th>
             <th>Content</th>
             <th>Status</th>
@@ -25,7 +25,7 @@
         <% @tickets.each do |ticket| %>
             <tr>
                 <td><%= ticket.name %></td>
-                <td><%= ticket.email %></td>
+                <td><%= User.find(ticket.created_by).email %></td>
                 <td><%= ticket.subject %></td>
                 <td><%= ticket.content %></td>
                 <td>

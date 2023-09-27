@@ -17,6 +17,7 @@ class TicketsController < ApplicationController
 
     def create
         @ticket = Ticket.new(ticket_params)
+        @ticket.created_by = current_user.id
         if @ticket.valid?
             @ticket.save_to_csv
             redirect_to tickets_path, notice: 'Ticket was successfully created.'
@@ -43,7 +44,7 @@ class TicketsController < ApplicationController
     private
     
     def ticket_params
-        params.require(:ticket).permit(:name, :email, :subject, :content, :status)
+        params.require(:ticket).permit(:name, :email, :subject, :content, :status, :priority, :assigned_to_id, :created_by)
     end
     
 end

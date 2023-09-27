@@ -1,11 +1,3 @@
-id,name,email,subject,content,status
-42,shiran new ,bla@gmail.com,another ticket,1,new_ticket
-43,shiran new ,bla@gmail.com,another ticket,2,new_ticket
-44,shiran new ,bla@gmail.com,another ticket,3,new_ticket
-45,shiran new ,bla@gmail.com,another ticket,4,new_ticket
-46,shiran new ,bla@gmail.com,another ticket,5,new_ticket
-47,shiran new ,bla@gmail.com,another ticket,6,new_ticket
-48,shiran new ,bla@gmail.com,another ticket,51,new_ticket
-49,shiran new ,bla@gmail.com,another ticket,48,new_ticket
-50,shiran new ,bla@gmail.com,another ticket,12345,new_ticket
-51,shiran new ,bla@gmail.com,another ticket,41,new_ticket
+id,name,subject,content,status,priorities[priority],created_by
+1,shiran,new test,dddddd,new_ticket,low,1
+2,shiran,new test,dddddd,new_ticket,low,1

@@ -5,16 +5,17 @@ task :read_csv_to_db => :environment do
   csv_path = Rails.root.join('tickets.csv')
   table = CSV.read(csv_path, headers: true)
   modified_file = false
-
+  
+  debugger
   table.each_with_index do |row, index|
     next if row[0]
-
     attributes = {
       name: row[1],
-      email: row[2],
-      subject: row[3],
-      content: row[4],
-      status: row[5]
+      subject: row[2],
+      content: row[3],
+      status: row[4],
+      priority: row[5],
+      created_by: row[6]
     }
 
     ticket = Ticket.create(attributes)
@@ -24,7 +25,7 @@ task :read_csv_to_db => :environment do
 
   if modified_file
     CSV.open(csv_path, "w") do |csv|
-      csv << ["id", "name", "email", "subject", "content", "status"]
+      csv << ["id", "name", "subject", "content", "status", "priorities[priority]", "created_by"]
       table.each do |row|
         csv << row
       end
