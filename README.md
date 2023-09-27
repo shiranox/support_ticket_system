@@ -1,24 +1,36 @@
-# README
+Create a regular user
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+![image](https://github.com/shiranox/support_ticket_system/assets/55157254/80102953-bc21-4064-b4c3-fdf8ae8d1b41)
 
-Things you may want to cover:
 
-* Ruby version
+Create a new ticket
 
-* System dependencies
+![image](https://github.com/shiranox/support_ticket_system/assets/55157254/5aedf828-e42c-495f-af6c-b0498a8daa11)
 
-* Configuration
 
-* Database creation
+Login
 
-* Database initialization
+![image](https://github.com/shiranox/support_ticket_system/assets/55157254/2946d545-84f7-4c9b-9eb0-85881bb3fab7)
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+Viewing ticket and adding a comment 
 
-* Deployment instructions
+![image](https://github.com/shiranox/support_ticket_system/assets/55157254/a6eab09d-7e30-41f9-a1fd-5238dba42e0f)
 
-* ...
+
+Manager's index
+
+![image](https://github.com/shiranox/support_ticket_system/assets/55157254/2ac21983-7f2a-4da0-86ee-eb59181f8ee6)
+
+
+Validation
+
+![image](https://github.com/shiranox/support_ticket_system/assets/55157254/2b55567e-fe8f-4d09-8f16-baf4a5c55e32)
+
+Deleting a ticket
+
+![image](https://github.com/shiranox/support_ticket_system/assets/55157254/bf17f8c0-863f-4175-90c3-2b6f9aa4e329)
+
+Resolved status can't be applied prior to posting a comment to the ticket
+
+![image](https://github.com/shiranox/support_ticket_system/assets/55157254/f0e817fe-42ac-467d-b2d3-a06ba2cefb19)
